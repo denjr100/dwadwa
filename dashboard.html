@@ -1,155 +1,37 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>discord.gg/njj</title>
-    <style>
- body {
-            font-family: Arial, sans-serif;
-            direction: rtl;
-            text-align: right;
-            background-color: #111827;
-            color: #fff;
-            padding: 20px;
-        }
-        .container {
-            background-color: #111827;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(17, 24, 39, 1.5);
-            max-width: 800px;
-            margin: auto;
-        }
-        h1 {
-            color: #db0101b6;
-        }
-        label {
-            font-weight: bold;
-        }
-        input[type="text"], input[type="number"] {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #555;
-            border-radius: 4px;
-            background-color: #444;
-            color: #fff;
-        }
-        button {
-            background-color: #db0101b6;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        button:hover {
-            background-color: #db0101b6;
-        }
-        .profile-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-        .profile-header img {
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-        }
-        .profile-header .user-info, .profile-header .bot-info {
-            display: flex;
-            align-items: center;
-        }
-        .profile-header .user-info img, .profile-header .bot-info img {
-            margin-left: 10px;
-        }
-        .profile-header .user-info div, .profile-header .bot-info div {
-            display: flex;
-            flex-direction: column;
-        }
-        .profile-header .user-info div span, .profile-header .bot-info div span {
-            margin-bottom: 3px;
-        }
-        .profile-header .user-info div span:first-child, .profile-header .bot-info div span:first-child {
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Yazen</title>
 </head>
 <body>
- <div class="container">
-        <div class="profile-header">
-            <div class="user-info">
-                <img id="userImage" src="https://images-ext-1.discordapp.net/external/OIdf_18gZAuf-ZhSMfyi767FAbpjrvfUAx7zEi_xLIE/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/707813418924769281/7440f8a083d6fca8bd1e7b62a1dc45a9.png?format=webp&quality=lossless" alt="User Image">
-                <div>
-                    <span id="userName">k.xj</span>
-                    <span id="userStatus">This Bot code by NJ - Abukhalid</span>
-                </div>
-            </div>
-            <div class="bot-info">
-                <div>
-                    <span id="botName">NJ_Fivem_Bot_dashboard</span>
-                    <span id="botStatus">discord.gg/njj</span>
-                </div>
-                <img id="botImage" src="https://f.top4top.io/p_307030s081.gif" alt="Bot Image">
-            </div>
+    <header>
+        <a href="#" class="logo">Abu khalid</a>
+
+        <nav>
+            <a href="#" class="active"> القائمة الرئسية</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="abukhalid.png" alt="">
         </div>
-    <div class="container">
-        <h2>تسجيل الدخول</h2>
-        <input type="password" id="password" placeholder="كلمة السر" class="input-field" /><br />
-        <button id="loginBtn" class="btn" onclick="login()">تسجيل الدخول</button>
-        <div id="status"></div>
-
-        <div id="configForm" style="display: none;">
-            <h3>إعدادات البوت</h3>
-            <input type="text" id="botToken" placeholder="توكن البوت" class="input-field" /><br />
-            <input type="text" id="guildID" placeholder="كوبي ايدي السيرفر" class="input-field" /><br />
-            <input type="text" id="requiredRoleID" placeholder="الرتبة المطلوبة" class="input-field" /><br />
-            <button id="saveBtn" class="btn" onclick="saveConfig()">حفظ</button>
+        <div class="home-content">
+            <h1>Hello, my name is <span>Yazen</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Welcome to my World! As a Programmer And Devloper fluent in HTML, Node.js, CSS, JavaScript, Python, and TypeScript</p>
+            <div class="social-icons">
+                <a href="https://discord.gg/2N2WqpUtEy"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.tiktok.com/@MS4wLjABAAAAGC0dUhjK95IjRUqCgjC_phSHWY3fMIAVxxz-aPJxayxVQo_RLAacJBXP8hcCKMa2?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://github.com/denjr100"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/__4a9b"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="https://discord.gg/2N2WqpUtEy" class="btn">Thanks That Was AN Some Information About me And My Accounts</a>
         </div>
-    </div>
-
-    <script>
-        const correctPassword = 'NJSTORE';
-
-        function login() {
-            const password = document.getElementById('password').value;
-            const status = document.getElementById('status');
-
-            if (password === correctPassword) {
-                document.getElementById('configForm').style.display = 'block';
-                document.getElementById('password').style.display = 'none';
-                document.getElementById('loginBtn').style.display = 'none';
-                status.textContent = '';
-
-   
-                const config = JSON.parse(localStorage.getItem('config'));
-                if (config) {
-                    document.getElementById('botToken').value = config.botToken;
-                    document.getElementById('guildID').value = config.guildID;
-                    document.getElementById('requiredRoleID').value = config.requiredRoleID;
-                }
-            } else {
-                status.textContent = 'كلمة السر غير صحيحة';
-            }
-        }
-
-        function saveConfig() {
-            const botToken = document.getElementById('botToken').value;
-            const guildID = document.getElementById('guildID').value;
-            const requiredRoleID = document.getElementById('requiredRoleID').value;
-
-            const configData = {
-                botToken,
-                guildID,
-                requiredRoleID
-            };
-
-            localStorage.setItem('config', JSON.stringify(configData));
-            alert('تم حفظ الإعدادات بنجاح');
-        }
-    </script>
+    </section>
 </body>
 </html>
